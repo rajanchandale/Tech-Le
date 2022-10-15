@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<html>
+    <head>
+        <title>TECH-LE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+        <link rel="stylesheet" href="wordleCSS.css">
+        <script src="wordleScript.js"></script>
+    </head>
+
+    <body>
+        <h1 id="title">TECH-LE</h1>
+        <hr>
+        <br>
+        <div id="board">
+        </div>
+
+        <br>
+        
+		<div class = "grid-container">		
+		
+			<div id = "winningDiv">
+				
+				<h1> YOU GUESSED CORRECTLY ! </h1>
+				<button type = "button" id = "newGameButton" onClick = "window.location.reload();document.getElementById('winningDiv').style.display = 'none';"> <strong> New Word </strong> </button> 
+				<button type = "button" id = "closeButton" onClick = "document.getElementById('winningDiv').style.display = 'none';"> <strong> Close </strong> </button>
+			</div>
+			
+			<div id = "losingDiv">
+				<h1 id = "wordMessage"> THE WORD WAS: </h1>
+				<h1 align = "center" id="answer"></h1>
+				<button type = "button" id = "newGameButton" onClick = "window.location.reload();document.getElementById('winningDiv').style.display = 'none';"> <strong> New Word </strong> </button> 
+				<button type = "button" id = "closeButton" onClick = "document.getElementById('losingDiv').style.display = 'none';"> <strong> Close </strong> </button>
+			</div>
+		</div>
+    </body>
+</html>
